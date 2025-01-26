@@ -6,7 +6,7 @@ const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://searchData:search3126@searchbar-cluster.eo9vo.mongodb.net/?retryWrites=true&w=majority&appName=SearchBar-Cluster', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://searchData:<db_password>@searchbar-cluster.eo9vo.mongodb.net/?retryWrites=true&w=majority&appName=SearchBar-Cluster', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 // Check MongoDB connection

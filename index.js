@@ -3,7 +3,7 @@ const protoLoader = require('@grpc/proto-loader');
 const mongoose = require('mongoose');
 const Payload = require('./models/payload');
 // MongoDB connection string
-const url = 'mongodb+srv://searchData:search3126@searchbar-cluster.eo9vo.mongodb.net/?retryWrites=true&w=majority&appName=SearchBar-Cluster';
+const url = 'mongodb+srv://searchData:<db_password>@searchbar-cluster.eo9vo.mongodb.net/?retryWrites=true&w=majority&appName=SearchBar-Cluster';
 async function connect() {
   try {
     await mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true });
