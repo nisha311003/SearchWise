@@ -5,23 +5,29 @@ NODE JS GRPC SERVER with EXPRESS JS using MONGODB database
 Make sure you have at least Node.js 20.11.0 installed.
 
 You can check your Node.js version by running node -v:
-$ node -v
-v20.11.0
+
+### `$ node -v`
+
+### `v20.11.0`
 
 clone
 Navigate to your work directory and clone the project, change directory to the SearchWise and add a new remote origin pointing to the new project repo.
-$ git clone https://github.com/nisha311003/SearchWise.git
-$ cd SearchWise
 
-Run
+### `$ git clone https://github.com/nisha311003/SearchWise.git`
+
+### `$ cd SearchWise`
+
 Run command to install dependencies
-$ npm install
+
+### `$ npm install`
 
 Run command to start backened
-$ node index.js
+
+### `$ node index.js`
 
 Run command to start server on port 8080
-$ node grpc-web-proxy.js
+
+### `$ node grpc-web-proxy.js`
 
 In the project directory, you can run:
 
