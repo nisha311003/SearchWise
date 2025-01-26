@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package payload;
+
+// The payload service definition
+service PayloadService {
+  // Existing methods
+  
+  // New method for searching by title
+  rpc SearchByTitle (SearchRequest) returns (SearchResponse);
+}
+
+// The payload request message
+message PayloadRequest {
+  string id = 1;
+}
+
+// The payload response message
+message PayloadResponse {
+  string _id = 1;
+  string type = 2;
+  //string solution = 3;
+  string title = 4;
+  //repeated Block blocks = 5;
+}
+
+// Block message
+message Block {
+  string text = 1;
+  bool showInOption = 2;
+  bool isAnswer = 3;
+}
+
+// New message for search request
+message SearchRequest {
+  string query = 1;
+}
+
+// New message for search response
+message SearchResponse {
+  repeated PayloadResponse payloads = 1;
+}
